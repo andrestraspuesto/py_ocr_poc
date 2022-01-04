@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  python:
+    container_name: ocr_py
+    build: .
+    tty: true
+    volumes:
+      - ./app:/usr/src/app
+      - ./input:/input
+      - ./output:/output
